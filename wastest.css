@@ -1,0 +1,359 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#eef9ff;
+  overflow-x:hidden;
+  color:#0b3b52;
+}
+
+.header{
+  width: 100%;
+  background: rgba(224, 247, 255, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.navbar{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0277bd;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover{
+  background: #81d4fa;
+  color: #01579b;
+}
+
+
+
+
+
+
+.waste{
+  height:100vh;
+  background:
+  linear-gradient(rgba(186,233,255,0.55),rgba(186,233,255,0.55)),
+  url('midea/carry.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+
+
+
+.waste-content{
+  width:90%;
+  max-width:900px;
+  position:relative;
+  z-index:2;
+}
+
+.waste-content span{
+  letter-spacing:4px;
+  color:#0077b6;
+  font-weight:600;
+}
+
+.waste-content h1{
+  font-size:90px;
+  line-height:1;
+  margin:25px 0;
+  color:#083d56;
+}
+
+.waste-content p{
+  font-size:20px;
+  line-height:1.9;
+  max-width:750px;
+  margin:auto;
+  color:#20546d;
+}
+
+.waste-buttons{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.waste-buttons a{
+  text-decoration:none;
+  padding:16px 42px;
+  border-radius:50px;
+  background:#5dd4ff;
+  color:#083d56;
+  font-weight:600;
+  transition:0.4s;
+  box-shadow:0 10px 25px rgba(93,212,255,0.4);
+}
+
+.waste-buttons a:hover{
+  transform:translateY(-8px);
+}
+
+.glass{
+  background:rgba(255,255,255,0.45);
+  backdrop-filter:blur(12px);
+}
+
+.about{
+  padding:130px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:70px;
+  flex-wrap:wrap;
+}
+
+.about-image{
+  flex:1;
+  min-width:320px;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:35px;
+  box-shadow:0 20px 50px rgba(0,119,182,0.15);
+}
+
+.about-text{
+  flex:1;
+  min-width:320px;
+}
+
+.about-text span{
+  color:#0096c7;
+  letter-spacing:4px;
+  font-weight:600;
+}
+
+.about-text h2{
+  font-size:58px;
+  margin:20px 0;
+  color:#083d56;
+}
+
+.about-text p{
+  line-height:2;
+  color:#3c6477;
+  margin-bottom:20px;
+  font-size:17px;
+}
+
+.cards{
+  padding:20px 8% 120px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:rgba(255,255,255,0.6);
+  border:1px solid rgba(255,255,255,0.7);
+  backdrop-filter:blur(16px);
+  padding:45px 35px;
+  border-radius:35px;
+  transition:0.5s;
+  box-shadow:0 20px 40px rgba(0,119,182,0.08);
+}
+
+.card:hover{
+  transform:translateY(-15px);
+}
+
+.icon{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#7edfff,#c7f1ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:36px;
+  margin-bottom:25px;
+}
+
+.card h3{
+  font-size:30px;
+  margin-bottom:18px;
+  color:#0a4560;
+}
+
+.card p{
+  line-height:2;
+  color:#4b6d7f;
+}
+
+.impact{
+  padding:120px 8%;
+  background:linear-gradient(180deg,#dff6ff,#eef9ff);
+}
+
+.title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.title span{
+  color:#0096c7;
+  letter-spacing:4px;
+  font-weight:600;
+}
+.title h2{
+  font-size:60px;
+  margin-top:20px;
+  color:#083d56;
+}
+
+.impact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+.impact-box{
+  background:white;
+  padding:45px 35px;
+  border-radius:35px;
+  transition:0.5s;
+  box-shadow:0 15px 35px rgba(0,119,182,0.08);
+}
+
+.impact-box:hover{
+  transform:scale(1.04);
+}
+
+.impact-box h3{
+  font-size:30px;
+  margin-bottom:20px;
+  color:#0a4560;
+}
+
+.impact-box p{
+  line-height:2;
+  color:#4b6d7f;
+}
+
+.quote{
+  padding:130px 8%;
+}
+
+.quote-content{
+  background:
+  linear-gradient(rgba(187,235,255,0.75),rgba(187,235,255,0.75)),
+  url('midea/green\ recycle.jpg');
+  background-size:cover;
+  background-position:center;
+  padding:100px 50px;
+  border-radius:40px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,119,182,0.12);
+}
+
+.quote-content h2{
+  font-size:55px;
+  line-height:1.5;
+  max-width:950px;
+  margin:auto;
+  color:#083d56;
+}
+
+.quote-content a{
+  display:inline-block;
+  margin-top:35px;
+  text-decoration:none;
+  padding:16px 40px;
+  background:#5dd4ff;
+  color:#083d56;
+  border-radius:40px;
+  font-weight:600;
+  transition:0.4s;
+}
+
+.quote-content a:hover{
+  transform:translateY(-8px);
+}
+
+.foot{
+  background: #f2f2f2;
+  padding: 50px 40px;
+}
+
+.footcont{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footcol{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footcol a{
+  text-decoration: none;
+  color: #333;
+}
+
+.footcol a:hover{
+  color: #0277bd;
+}
+
+.footabt{
+  max-width: 250px;
+}
+
+.footabt p{
+  margin: 15px 0;
+  line-height: 1.7;
+}
+
+.footabt a{
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.copyright{
+  width:100%;
+  text-align:center;
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid #ccc;
+}
+
+.copyright p{
+  color:#000000;
+  font-size:14px;
+}
